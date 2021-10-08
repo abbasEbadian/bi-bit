@@ -2026,12 +2026,24 @@ button {
 .table {
   color: white;
 }
+
+.custom-table tbody {
+  display: block;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.custom-table thead, .custom-table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
 .custom-table {
   background-color: #001952;
   border-radius: 6px;
   margin: 0;
-  overflow-x: auto;
-  height: 450px;
+  /* overflow-x: auto; */
+  /* height: 450px; */
 }
 .custom-table thead tr,
 .custom-table thead th {
@@ -2271,13 +2283,30 @@ body#index header {
 }
 .swap-box-table {
   background: var(--color-navy-blue);
-  overflow-x: auto;
   border-radius: 12px;
+  /* overflow-x: auto; */
   height: 450px;
+
 }
 .swap-box-table table {
   background: none;
 }
+
+.swap-box-table tbody {
+  display: block;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.swap-box-table thead, .swap-box-table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.swap-box-table thead {
+  width: calc( 100% - 1.1em );
+}
+
 .swap-box-table table * {
   text-align: center;
   border: none !important;
@@ -2304,7 +2333,7 @@ body#index header {
   position: relative;
 }
 .app-index .img img {
-  width: 80%;
+  width: 70%;
   transform: translateY(-50px);
 }
 .links > div {
@@ -2332,7 +2361,7 @@ body#index header {
   margin: 2rem 0;
 }
 .create-account-img img{
-  width:100%;
+  width:60%;
 }
 .create-account-img > div:nth-of-type(2) p {
   font-size: 20px;
