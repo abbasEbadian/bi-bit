@@ -39,6 +39,16 @@
   .custom-table tbody th, .custom-table tbody td{
     width: 90px;
   }
+  .swap-box-table .custom-table tbody th, .swap-box-table .custom-table tbody td{
+    width: 160px;
+  }
+  .swap select,
+  .swap input,
+  .swap button {
+    height: 58px;
+  }
+
+
   .main-slider-content h2{
     font-size: 18px;
     text-align: center !important;
@@ -84,6 +94,10 @@
   }
   .swap-box span{
     font-size: 10px;
+  }
+  .swap-box .buy.active, .swap-box .sell.active{
+    border-color: #ff8000;
+    color: white;
   }
   .swap-box .buy{
     order: 3;

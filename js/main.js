@@ -82,6 +82,10 @@
     }
     mobileOffCanvasMenu();
 
+    $(".swap-box .buy, .swap-box .sell").click(e=>{
+      $(".swap-box .buy, .swap-box .sell").removeClass("active");
+      $(e.currentTarget).addClass("active");
+    });
 
 })(jQuery);
 const navToggle = document.querySelector('.offcanvas-toggle');

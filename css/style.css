@@ -70,6 +70,20 @@ p {
   padding: 12px 40px;
   line-height: 21px;
 }
+.btn-blue-outline:hover {
+  background-color: var(--color-blue);
+}
+.btn-blue-outline {
+  background-color: transparent;
+  color: white;
+  font-size: var(--font-size-12);
+  border-radius: 4px;
+  height: 48px;
+  padding: 12px 40px;
+  line-height: 21px;
+  transition: 0.2s;
+}
+
 .btn-orange-p0 {
   background-color: var(--color-orange);
   color: white;
@@ -1678,6 +1692,11 @@ button {
   font-size: 14px;
   text-align: right;
   padding: 0.5rem;
+  font-weight: 300;
+}
+.text-card-blog p{
+
+  font-size: 12px;
 }
 .text-card-blog {
   font-size: var(--font-size-12);
@@ -1706,7 +1725,6 @@ button {
   border: 1px solid rgb(238, 238, 238, 0.2);
   border-radius: 6px;
   /* padding: 20px 35px; */
-  background-color: var(--color-orange);
   transition: 0.2s all ease-in-out;
 }
 #search-bar {
@@ -2027,17 +2045,7 @@ button {
   color: white;
 }
 
-.custom-table tbody {
-  display: block;
-  max-height: 350px;
-  overflow-y: auto;
-}
 
-.custom-table thead, .custom-table tbody tr {
-  display: table;
-  width: 100%;
-  table-layout: fixed;
-}
 .custom-table {
   background-color: #001952;
   border-radius: 6px;
@@ -2066,7 +2074,7 @@ button {
   font-weight: 500;
   text-align: center;
 }
-.custom-table tbody th,
+.custom-table thead th,
 .custom-table tbody td {
   color: #fff;
   font-weight: 400;
@@ -2271,6 +2279,12 @@ body#index header {
 .swap input {
   background: var(--color-bg-navy-blue);
 }
+.swap-box > div > *{
+  line-height: 250%;;
+}
+.swap-box .buy.active span, .swap-box .sell.active span {
+  color: var(--color-orange);
+}
 .swap-box span {
   font-size: 12px;
   white-space: nowrap;
@@ -2284,21 +2298,28 @@ body#index header {
 .swap-box-table {
   background: var(--color-navy-blue);
   border-radius: 12px;
-  /* overflow-x: auto; */
+  overflow-x: auto;
   height: 450px;
 
 }
 .swap-box-table table {
   background: none;
 }
-
-.swap-box-table tbody {
+.swap-box-table .custom-table tbody th, .swap-box-table .custom-table tbody td{
+  width: auto;
+}
+.swap-box-table .custom-table  tbody {
   display: block;
-  max-height: 300px;
+  max-height: 260px;
+  overflow-y: auto;
+}
+.custom-table tbody {
+  display: block;
+  max-height: 350px;
   overflow-y: auto;
 }
 
-.swap-box-table thead, .swap-box-table tbody tr {
+.custom-table thead, .custom-table tbody tr {
   display: table;
   width: 100%;
   table-layout: fixed;
