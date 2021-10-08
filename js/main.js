@@ -87,6 +87,8 @@
       $(e.currentTarget).addClass("active");
     });
 
+    if($("#particles-js").length > 0)
+      init_particle()
 })(jQuery);
 const navToggle = document.querySelector('.offcanvas-toggle');
 const nav = document.querySelector('#mobile-menu-offcanvas');
@@ -134,7 +136,23 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 
-particlesJS('particles-js',
+
+//------------------------------ particle-js
+// Accordian 
+const accor = document.querySelectorAll('.accordion-title');
+accor.forEach(item => {
+    item.addEventListener('click', function(){
+        item.classList.toggle('active');
+        const content = item.nextElementSibling;
+        if(content.style.height){
+            content.style.height = null
+        }else{
+            content.style.height = content.scrollHeight + 'px';
+        }
+    })
+})
+function init_particle() {
+  particlesJS('particles-js',
   
   {
     "particles": {
@@ -254,21 +272,7 @@ particlesJS('particles-js',
   }
 
 );
-//------------------------------ particle-js
-// Accordian 
-const accor = document.querySelectorAll('.accordion-title');
-accor.forEach(item => {
-    item.addEventListener('click', function(){
-        item.classList.toggle('active');
-        const content = item.nextElementSibling;
-        if(content.style.height){
-            content.style.height = null
-        }else{
-            content.style.height = content.scrollHeight + 'px';
-        }
-    })
-})
-
+}
 function init_index_slider() {
   const swiper1 = new Swiper('.swiper.btc-swiper', {
     effect: 'coverflow',
