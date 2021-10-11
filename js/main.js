@@ -89,6 +89,8 @@
 
     if($("#particles-js").length > 0)
       init_particle()
+
+     
 })(jQuery);
 const navToggle = document.querySelector('.offcanvas-toggle');
 const nav = document.querySelector('#mobile-menu-offcanvas');
@@ -323,4 +325,7 @@ function init_index_slider() {
       },
     }
   })
+}
+function ToggleMenu(e) {
+  $(e.currentTarget).siblings(".menu").toggleClass('active')
 }

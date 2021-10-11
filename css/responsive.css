@@ -18,7 +18,7 @@
     order: 2;
     padding: 16px;
   }
-  a.btn-profile{
+  div.btn-profile:not(.btn-menu){
     padding: 0.4rem 0.85rem;
   }
   div.create-account-img > div:nth-of-type(2) p {

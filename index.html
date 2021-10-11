@@ -26,7 +26,7 @@
                 <div class="nav-btn-menu">
                     <div class="nav-links-menu">
                         <ul>
-                            <li class="nav-link"">
+                            <li class="nav-link">
                                 <a href=" #">صفحه اصلی</a>
                             </li>
                             <li class="nav-link">
@@ -44,8 +44,16 @@
                         </ul>
                     </div>
 
-                    <div class="log-sign" style="--i: 1.8s">
-                        <a href="#" class="btn-menu solid">حساب کاربری</a>
+                   
+                    <div class="log-sign">
+                        <div class="btn-profile btn-menu solid" onclick="ToggleMenu(event)">
+                            حساب کاربری
+                        </div>
+                        <div class="menu">
+                            <ul>
+                                <li><img src="img/crypto/PP.png" alt=""><a href="#">پروفایل من</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -161,9 +169,14 @@
                     <span class="mr-2">بی بیت</span>
                 </div>
                 <div class="log-sign">
-                    <a href="#" class="btn-profile ">
+                    <div class="btn-profile" onclick="ToggleMenu(event)">
                         <img src="img/icon-social/Profile.png" alt="">
-                    </a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><img src="img/crypto/PP.png" alt=""><a href="#">پروفایل من</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
